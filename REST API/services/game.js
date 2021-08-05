@@ -11,9 +11,9 @@ async function addGame(gameData) {
 
 async function getAllGames() {
 
-    const game = await Game.find().lean();
+    const games = await Game.find().lean();
 
-    return game;
+    return games;
 }
 
 
