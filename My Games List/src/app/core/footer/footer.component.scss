@@ -1,0 +1,32 @@
+footer {
+    background: black;
+    margin-top: 1em;
+    position: absolute;
+    bottom: 0;
+    width: 99.16%;
+}
+
+footer p {
+    margin: 0.1em;
+    padding: 0;
+    font-size: 1em;
+
+    color: white;
+    letter-spacing: 0.8px;
+    font-family: "Source Sans Pro", sans-serif;
+    text-align: center;
+}
+#top{
+    margin-bottom: -0.5em;
+    margin-top: 0.3em;
+}
+
+.fa {
+    margin-right: 0.24em;
+    font-size: 1.5em;
+    color: white;
+}
+
+.fa:hover {
+    color: blueviolet;
+}
