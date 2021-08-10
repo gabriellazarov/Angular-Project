@@ -1,0 +1,28 @@
+<div class="theme-title" *ngIf="games">
+    <div *ngFor="let game of games" class="game-container">
+        <div class="game-wrapper">
+            <img src={{game.imageUrl}} alt="going hollow...">
+            <div class="game-info">
+                <div class="columns">
+                    <h2>{{game.title}}</h2>
+                    <div class="tags">
+                        <p>Tags: <span>{{game.tags.join(", ")}}</span></p>
+                    </div>
+                </div>
+                <p class="summary"><span>{{game.description}}</span></p>
+                <div class="columns bot">
+                    <div>
+                        <span>Average Score</span>
+                    </div>
+                    <div>
+                        <span>Your Score</span>
+                        <button>Update</button>
+                    </div>
+                    <button>Add to Plan to Play</button>
+                    <button>Add to Finished Games</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="!games">Loading...</div>

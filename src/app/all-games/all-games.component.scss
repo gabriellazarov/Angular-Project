@@ -1,0 +1,61 @@
+///keep
+div {
+    font-size: 18px;
+    letter-spacing: 0.4px;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    float: left;
+    max-width: 222px;
+    height: auto;
+    border: 2px solid black;
+    border-radius: 0.2em;
+    margin: -0.28em;
+    margin-right: 1%;
+}
+
+.game-wrapper {
+    display: flex;
+    padding: 0.2em 0.2em;
+    border: 2.5px solid black;
+    border-radius: 0.2em;
+    margin-top: 0.3em;
+    margin-right: 13%;
+    margin-left: 13%;
+}
+
+.game-info {
+    width: 100%;
+}
+
+h2 {
+    font-size: 33px;
+}
+
+span {
+    font-weight: normal;
+    letter-spacing: 0.23px;
+}
+
+.tags {
+    font-weight: bold;
+    width: 30%;
+}
+
+.game-container h2 {
+    padding: 0.3em 0 0.2em;
+    margin: 0;
+}
+
+.bot {
+    margin-top: 5%;
+    color: white;
+    background-color: black;
+    padding: 15px 15px 15px 15px;
+}
