@@ -3,23 +3,41 @@
         <div class="game-wrapper">
             <img src={{game.imageUrl}} alt="going hollow...">
             <div class="game-info">
+
                 <div class="columns">
                     <h2>{{game.title}}</h2>
                     <div class="tags">
                         <p>Tags: <span>{{game.tags.join(", ")}}</span></p>
                     </div>
                 </div>
+
                 <p class="summary"><span>{{game.description}}</span></p>
-                <div class="columns bot">
-                    <div>
-                        <span>Average Score</span>
+
+                <div class="bot">
+                    <div class="avgScore">
+                        <p>Average Score:</p>
+                        <span>3</span>
                     </div>
-                    <div>
-                        <span>Your Score</span>
-                        <button>Update</button>
+                    <div class="yourScore columns">
+                        <p>Your Score:</p>
+                        <select name="score" id="score">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                        <span>Update</span>
                     </div>
-                    <button>Add to Plan to Play</button>
-                    <button>Add to Finished Games</button>
+                    <div class="add">
+                        <span>Plan to Play</span>
+                        <span>Finished Game</span>
+                    </div>
                 </div>
             </div>
         </div>
