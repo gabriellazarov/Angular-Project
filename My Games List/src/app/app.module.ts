@@ -12,6 +12,8 @@ import { AllGamesComponent } from './all-games/all-games.component';
 import { PlanToPlayComponent } from './plan-to-play/plan-to-play.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { FinishedGamesComponent } from './finished-games/finished-games.component';
+import { LoginPageComponent } from './login-page/login-page.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,13 +21,15 @@ import { FinishedGamesComponent } from './finished-games/finished-games.componen
     AllGamesComponent,
     PlanToPlayComponent,
     NotFoundComponent,
-    FinishedGamesComponent
+    FinishedGamesComponent,
+    LoginPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CoreModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [
     ContentService
