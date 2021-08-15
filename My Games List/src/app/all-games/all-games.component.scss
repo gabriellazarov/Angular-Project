@@ -35,6 +35,10 @@ img {
     width: 100%;
 }
 
+.summary{
+    overflow: hidden;
+}
+
 h2 {
     font-size: 33px;
 }
@@ -55,13 +59,11 @@ span {
 }
 
 .bot {
-    display: flex;
-
     color: white;
     background-color: black;
 
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 222px;
     right: -1px;
 
@@ -84,6 +86,8 @@ span {
 .add span:hover {
     background-color: #ededed;
     color: black;
+    cursor: pointer;
+    user-select: none;
 }
 
 .yourScore {
@@ -109,13 +113,13 @@ span {
     border-radius: 0.4em;
     margin: 0.7em;
     margin-bottom: 0.2em;
-
 }
 .yourScore span:hover {
     background-color: #ededed;
     color: black;
+    cursor: pointer;
+    user-select: none;
 }
-
 
 .avgScoreTop {
     font-weight: bold;
@@ -126,4 +130,3 @@ span {
     margin-top: 0em;
     margin-bottom: 0.5em;
 }
-

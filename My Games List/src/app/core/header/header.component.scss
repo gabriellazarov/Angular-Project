@@ -40,6 +40,9 @@ nav {
 nav li:hover {
   background-color: #242424;
 }
+nav li.active {
+  background-color: #242424;
+}
 
 /// mini-navbar
 
@@ -51,6 +54,7 @@ nav li:hover {
   text-decoration: none;
   color: black;
   cursor: pointer;
+  user-select: none;
   list-style: none;
   margin: 0.75em;
   padding: 0 1.55em;
@@ -70,5 +74,4 @@ nav li:hover {
 .mini-navbar li:hover {
   background-color: #ededed;
 }
-
 
