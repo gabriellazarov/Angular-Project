@@ -1,3 +1,4 @@
+import { RegisterPageComponent } from './register-page/register-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { FinishedGamesComponent } from './finished-games/finished-games.component';
 import { PlanToPlayComponent } from './plan-to-play/plan-to-play.component';
@@ -28,6 +29,10 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginPageComponent
+  },
+  {
+    path: 'register',
+    component: RegisterPageComponent
   },
   {
     path: '**',
