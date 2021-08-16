@@ -1,0 +1,30 @@
+<div class="bigWrapper" *ngIf="games">
+    <div *ngFor="let game of games" class="game-container">
+        <div class="game-wrapper">
+
+            <h2>{{game.title}}</h2>
+
+            <div class="columns">
+                <p class="tags">Tags: <span>{{game.tags.join(", ")}}</span></p>
+                <div>
+                    <p class="avgScoreTop"> Avg. Score:</p>
+                    <p class="avgScoreBottom">6/10</p>
+                </div>
+            </div>
+
+            <img src={{game.imageUrl}} alt="going hollow...">
+
+            <div class="summary-container">
+                <p class="summaryTitle">Summary</p>
+                <p class="summary">{{game.description}}</p>
+            </div>
+
+
+            <div class="add">
+                <span>Remove Game</span>
+                <span>Finished Game</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="!games">Loading...</div>
