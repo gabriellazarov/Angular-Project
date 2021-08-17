@@ -1,3 +1,4 @@
+import { UserService } from './user.service';
 import { AppRoutingModule } from './../app-routing.module';
 import { RegisterPageComponent } from './register-page/register-page.component';
 import { LoginPageComponent } from './login-page/login-page.component';
@@ -16,6 +17,9 @@ import { FormsModule } from '@angular/forms';
     CommonModule,
     FormsModule,
     AppRoutingModule
+  ],
+  providers: [
+    UserService
   ]
 })
 export class UserModule { }

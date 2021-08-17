@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
+import { UserService } from './../user.service';
+
 
 @Component({
   selector: 'app-register-page',
@@ -9,10 +11,24 @@ import { Router } from '@angular/router';
 })
 export class RegisterPageComponent {
 
-  constructor(private router: Router) { }
+  constructor(
+    private userService: UserService,
+    private router: Router
+  ) { }
 
 
-  login(form: NgForm): void {
-
+  register(form: NgForm): void {
+    if (form.invalid) { return; }
+    const { email, password } = form.value;
+    this.userService.register( { email, password }).subscribe({
+      next: () => {
+        this.router.navigate(['/']);
+      },
+      error: (err) => {
+        console.log(err);
+      }
+    });
   }
+
+
 }
