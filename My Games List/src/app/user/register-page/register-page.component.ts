@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { Router, ActivatedRoute } from '@angular/router';
-import { UserService } from './../user.service';
+import { Router } from '@angular/router';
+import { UserService } from '../../core/services/user.service';
 
 
 @Component({
@@ -29,6 +29,4 @@ export class RegisterPageComponent {
       }
     });
   }
-
-
 }

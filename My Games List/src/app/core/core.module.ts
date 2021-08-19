@@ -1,6 +1,9 @@
+import { UserService } from './services/user.service';
+import { ContentService } from './services/content.service';
+import { AuthActivate } from './guards/auth.activate';
 import { RouterModule } from '@angular/router';
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { NgModule, PLATFORM_ID } from '@angular/core';
+import { CommonModule, isPlatformBrowser, isPlatformServer } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 
@@ -15,9 +18,14 @@ import { FooterComponent } from './footer/footer.component';
     CommonModule,
     RouterModule
   ],
-  exports:[
+  exports: [
     HeaderComponent,
     FooterComponent
+  ],
+  providers: [
+    AuthActivate,
+    UserService,
+    ContentService
   ]
 })
 export class CoreModule { }

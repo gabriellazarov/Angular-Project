@@ -16,7 +16,7 @@ nav li {
   line-height: 1.5;
   font-size: 17px;
   color: white;
-  
+
   letter-spacing: 1px;
   font-family: "Source Sans Pro", sans-serif;
   overflow: hidden;
@@ -31,7 +31,6 @@ nav li {
   border-radius: 0.4em;
   width: 7%;
 }
-
 
 nav {
   background-color: black;
@@ -75,3 +74,13 @@ nav li.active {
   background-color: #ededed;
 }
 
+
+.mini-navbar ul span {
+  width: 100%;
+  font-size: 22px;
+  text-decoration: none;
+  color: black;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  margin-right: -11px;
+}

@@ -16,28 +16,64 @@
                 <div class="bot">
                     <div>
                         <p class="avgScoreTop"> Average Score:</p>
-                        <p class="avgScoreBot">3/10</p>
+                        <p class="avgScoreBot">{{getAverageScore(game)}}</p>
                     </div>
-                    <div class="yourScore columns">
-                        <p>Your Score:</p>
-                        <select name="score" id="score">
-                            <option value="None">None</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                        </select>
-                        <span>Update</span>
-                    </div>
+
+                    <ng-container *ngIf="isLogged">
+                        <div *ngIf="gameIsInFG(game._id)" class="yourScore columns">
+                            <p>Your Score:</p>
+                            <select #score name="score" id="score">
+                                <option *ngIf="userScore(game)===0" value="None" selected>None</option>
+                                <option *ngIf="userScore(game)!==0" value="None">None</option>
+
+                                <option *ngIf="userScore(game)===1" value="1" selected>1</option>
+                                <option *ngIf="userScore(game)!==1" value="1">1</option>
+
+                                <option *ngIf="userScore(game)===2" value="2" selected>2</option>
+                                <option *ngIf="userScore(game)!==2" value="2">2</option>
+
+                                <option *ngIf="userScore(game)===3" value="3" selected>3</option>
+                                <option *ngIf="userScore(game)!==3" value="3">3</option>
+
+                                <option *ngIf="userScore(game)===4" value="4" selected>4</option>
+                                <option *ngIf="userScore(game)!==4" value="4">4</option>
+
+                                <option *ngIf="userScore(game)===5" value="5" selected>5</option>
+                                <option *ngIf="userScore(game)!==5" value="5">5</option>
+
+                                <option *ngIf="userScore(game)===6" value="6" selected>6</option>
+                                <option *ngIf="userScore(game)!==6" value="6">6</option>
+
+                                <option *ngIf="userScore(game)===7" value="7" selected>7</option>
+                                <option *ngIf="userScore(game)!==7" value="7">7</option>
+
+                                <option *ngIf="userScore(game)===8" value="8" selected>8</option>
+                                <option *ngIf="userScore(game)!==8" value="8">8</option>
+
+                                <option *ngIf="userScore(game)===9" value="9" selected>9</option>
+                                <option *ngIf="userScore(game)!==9" value="9">9</option>
+
+                                <option *ngIf="userScore(game)===10" value="10" selected>10</option>
+                                <option *ngIf="userScore(game)!==10" value="10">10</option>
+                            </select>
+                            <span (click)="scoreThisGame(game._id, score.value)">Update</span>
+                        </div>
+                    </ng-container>
+
                     <div class="add">
-                        <span>Plan to Play</span>
-                        <span>Finished Game</span>
+                        <ng-container *ngIf="isLogged">
+                            <span *ngIf="gameIsInPTP(game._id)" (click)="removeThisGame(game._id)">Remove from
+                                List</span>
+                            <span *ngIf="!gameIsInPTP(game._id)" (click)="planThisGame(game._id)">Plan to Play</span>
+
+                            <span *ngIf="gameIsInFG(game._id)" (click)="removeThisGame(game._id)">Remove from
+                                List</span>
+                            <span *ngIf="!gameIsInFG(game._id)" (click)="finishThisGame(game._id)">Finished Game</span>
+                        </ng-container>
+                        <ng-container *ngIf="!isLogged">
+                            <span routerLink="/login">Plan to Play</span>
+                            <span routerLink="/login">Finished Game</span>
+                        </ng-container>
                     </div>
                 </div>
             </div>

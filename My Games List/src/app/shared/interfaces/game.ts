@@ -5,5 +5,11 @@ export interface IGame {
     description: string;
     imageUrl: string;
     tags: string[];
+    scores: [
+        {
+            userId: string,
+            score: number
+        }
+    ];
     __v: number;
 }

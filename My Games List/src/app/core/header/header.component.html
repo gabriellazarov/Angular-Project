@@ -3,11 +3,19 @@
         <img src="../../../assets/siteLogo.png" height="80" width="auto" class="logo">
         <div class="mini-navbar">
             <ul>
-                <li routerLink="/login">
+                <li *ngIf="!isLogged" routerLink="/login">
                     Login
                 </li>
-                <li routerLink="/register">
+                <li *ngIf="!isLogged" routerLink="/register">
                     Register
+                </li>
+
+                <span *ngIf="isLogged">Welcome,</span>
+                <li *ngIf="isLogged" routerLink="/profile">
+                    {{email}}
+                </li>
+                <li *ngIf="isLogged" (click)="logout()">
+                    Logout
                 </li>
             </ul>
         </div>
@@ -17,10 +25,10 @@
             <li routerLink="/all-games" routerLinkActive="active">
                 All Games
             </li>
-            <li routerLink="/plan-to-play" routerLinkActive="active">
+            <li *ngIf="isLogged" routerLink="/plan-to-play" routerLinkActive="active">
                 Plan to Play
             </li>
-            <li routerLink="/finished-games" routerLinkActive="active">
+            <li *ngIf="isLogged" routerLink="/finished-games" routerLinkActive="active">
                 Finished Games
             </li>
         </ul>
