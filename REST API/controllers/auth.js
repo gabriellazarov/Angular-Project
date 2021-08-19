@@ -92,7 +92,7 @@ function logout(req, res) {
 
 function getProfileInfo(req, res, next) {
     const { _id: userId } = req.user;
-
+    console.log(req.user);
     userModel.findOne({ _id: userId }, { password: 0, __v: 0 })
         .then(user => { res.status(200).json(user) })
         .catch(next);

@@ -7,17 +7,17 @@ const { gameController } = require('../controllers');
 
 router.get('/get', gameController.getAllGames);
 
-router.get('/finished/:userId', gameController.getFinishedGames);
+router.get('/finished/:userId', auth(), gameController.getFinishedGames);
 
-router.get('/planned/:userId', gameController.getPlanToPlay);
+router.get('/planned/:userId', auth(), gameController.getPlanToPlay);
 
-router.put('/finish/:gameId', gameController.finishGame);
+router.put('/finish/:gameId', auth(), gameController.finishGame);
 
-router.put('/plan/:gameId', gameController.planToPlay);
+router.put('/plan/:gameId', auth(), gameController.planToPlay);
 
-router.post('/score/:gameId', gameController.scoreGame);
+router.post('/score/:gameId', auth(), gameController.scoreGame);
 
-router.post('/remove/:gameId', gameController.removeFromLists);
+router.post('/remove/:gameId', auth(), gameController.removeFromLists);
 
 
 module.exports = router
