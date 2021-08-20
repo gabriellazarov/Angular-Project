@@ -1,7 +1,7 @@
 **MyGameList** is a simple site that is intended to index video games with info about them and let registered users make lists for their finished games and those they plan on playing. The concept is heavily inspired by MyAnimeList's.
 
-
-**Header:**
+ \
+**Header:**\
 Contains the site's logo as well as a navigation for pages: "All Games", "Login", "Register" for all users and "Finished Games", "Plan to Play", "Profile Page" for logged in users. Also has a "Logout" button for logged in users.
 
 **All Games:**\
