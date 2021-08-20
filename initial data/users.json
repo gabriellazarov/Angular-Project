@@ -1,0 +1,225 @@
+[{
+  "_id": {
+    "$oid": "611d613b856a733f54936afb"
+  },
+  "planToPlay": [],
+  "finishedGames": [
+    {
+      "$oid": "6106e2b046d9f352fcb0ea4b"
+    },
+    {
+      "$oid": "6106e3e23b32104e5822bd5d"
+    }
+  ],
+  "email": "2@2.2",
+  "password": "$2b$05$pWsXAF8GpEQ.0AqMoT4h9ezTeY2UkazTdctjWcctz6TKfiJ2gZIlK",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "611d727806ad3c2b8c5f50da"
+  },
+  "planToPlay": [],
+  "finishedGames": [
+    {
+      "$oid": "6106e2b046d9f352fcb0ea4b"
+    }
+  ],
+  "email": "123@123.123",
+  "password": "$2b$05$0oMUFZO7f8H2ZoIqdn4bYOwsPOvMV91uMFjpCudK/LlV9qlUZl8O.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "611fef016957575e44f76d6f"
+  },
+  "planToPlay": [
+    {
+      "$oid": "6106d4e1e174610c90c77003"
+    },
+    {
+      "$oid": "6106e2b046d9f352fcb0ea4b"
+    },
+    {
+      "$oid": "611fecce721a957a89a7cf46"
+    },
+    {
+      "$oid": "611fec36721a957a89a7cf45"
+    }
+  ],
+  "finishedGames": [
+    {
+      "$oid": "6106e3e23b32104e5822bd5d"
+    },
+    {
+      "$oid": "6106e44a3b32104e5822bd62"
+    },
+    {
+      "$oid": "611fedd1721a957a89a7cf48"
+    },
+    {
+      "$oid": "611feeb8721a957a89a7cf4a"
+    }
+  ],
+  "email": "gosho.OtPochivka@gmail.com",
+  "password": "$2b$05$Uln2p6jp0pzjB76AB2yVQeRlXaJbwMETZon/iwwZ.t/20dBuOsOF.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "611fef306957575e44f76dbf"
+  },
+  "planToPlay": [
+    {
+      "$oid": "611fecce721a957a89a7cf46"
+    },
+    {
+      "$oid": "611feeb8721a957a89a7cf4a"
+    }
+  ],
+  "finishedGames": [
+    {
+      "$oid": "6106d4e1e174610c90c77003"
+    },
+    {
+      "$oid": "6106e2b046d9f352fcb0ea4b"
+    },
+    {
+      "$oid": "6106e3e23b32104e5822bd5d"
+    },
+    {
+      "$oid": "6106e44a3b32104e5822bd62"
+    },
+    {
+      "$oid": "611fec36721a957a89a7cf45"
+    },
+    {
+      "$oid": "611fee3d721a957a89a7cf49"
+    },
+    {
+      "$oid": "611fedd1721a957a89a7cf48"
+    }
+  ],
+  "email": "ivan.todorov@neshtosi.bg",
+  "password": "$2b$05$c/yccIaQfhLfpTx5Dvx2wueuA6JUOJMuelm0jz6AGwJDTu49g/Yr6",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "611fef596957575e44f76e17"
+  },
+  "planToPlay": [
+    {
+      "$oid": "6106d4e1e174610c90c77003"
+    },
+    {
+      "$oid": "611fecce721a957a89a7cf46"
+    },
+    {
+      "$oid": "611fedd1721a957a89a7cf48"
+    }
+  ],
+  "finishedGames": [
+    {
+      "$oid": "6106e2b046d9f352fcb0ea4b"
+    },
+    {
+      "$oid": "6106e3e23b32104e5822bd5d"
+    },
+    {
+      "$oid": "611fec36721a957a89a7cf45"
+    },
+    {
+      "$oid": "6106e44a3b32104e5822bd62"
+    },
+    {
+      "$oid": "611fed25721a957a89a7cf47"
+    },
+    {
+      "$oid": "611fee3d721a957a89a7cf49"
+    },
+    {
+      "$oid": "611feeb8721a957a89a7cf4a"
+    }
+  ],
+  "email": "simo.lejo@ggg.bg",
+  "password": "$2b$05$x.AlgPkODX.rFgq6b45du.VKsDYDRXt4dLsvhJHZXEjCNmzWsa20G",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "611fef856957575e44f76e69"
+  },
+  "planToPlay": [],
+  "finishedGames": [
+    {
+      "$oid": "6106d4e1e174610c90c77003"
+    },
+    {
+      "$oid": "6106e2b046d9f352fcb0ea4b"
+    },
+    {
+      "$oid": "6106e3e23b32104e5822bd5d"
+    },
+    {
+      "$oid": "6106e44a3b32104e5822bd62"
+    },
+    {
+      "$oid": "611fec36721a957a89a7cf45"
+    },
+    {
+      "$oid": "611fecce721a957a89a7cf46"
+    },
+    {
+      "$oid": "611fed25721a957a89a7cf47"
+    },
+    {
+      "$oid": "611fedd1721a957a89a7cf48"
+    },
+    {
+      "$oid": "611feeb8721a957a89a7cf4a"
+    },
+    {
+      "$oid": "611fee3d721a957a89a7cf49"
+    }
+  ],
+  "email": "nono@bg.bg",
+  "password": "$2b$05$qpTNAJGPsXpP8aCKDzH24e/oD1qPKQJO/uBt6XpWujgwlacI72hd.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "611fefb46957575e44f76ed3"
+  },
+  "planToPlay": [
+    {
+      "$oid": "6106e3e23b32104e5822bd5d"
+    },
+    {
+      "$oid": "6106e44a3b32104e5822bd62"
+    },
+    {
+      "$oid": "611fec36721a957a89a7cf45"
+    },
+    {
+      "$oid": "611fedd1721a957a89a7cf48"
+    },
+    {
+      "$oid": "611fed25721a957a89a7cf47"
+    }
+  ],
+  "finishedGames": [
+    {
+      "$oid": "6106d4e1e174610c90c77003"
+    },
+    {
+      "$oid": "6106e2b046d9f352fcb0ea4b"
+    },
+    {
+      "$oid": "611fecce721a957a89a7cf46"
+    },
+    {
+      "$oid": "611feeb8721a957a89a7cf4a"
+    },
+    {
+      "$oid": "611fee3d721a957a89a7cf49"
+    }
+  ],
+  "email": "gamer.god@gmgod.gg",
+  "password": "$2b$05$CfGARX0gCZ4NhHhPhSkzx.9o5sd9lUgw9g7SjXm.ecKacRLAO22NG",
+  "__v": 0
+}]

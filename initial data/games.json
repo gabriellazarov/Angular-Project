@@ -1,0 +1,279 @@
+[{
+  "_id": {
+    "$oid": "6106d4e1e174610c90c77003"
+  },
+  "title": "Dark Souls",
+  "description": "Then, there was fire. Re-experience the critically acclaimed, genre-defining game that started it all. Beautifully remastered, return to Lordran in stunning high-definition detail running at 60fps.\r\nDark Souls Remastered includes the main game plus the Artorias of the Abyss DLC.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/en/8/8d/Dark_Souls_Cover_Art.jpg",
+  "__v": 0,
+  "tags": [
+    "Hack and Slash",
+    "RPG"
+  ],
+  "scores": [
+    {
+      "userId": "611fef306957575e44f76dbf",
+      "score": 4
+    },
+    {
+      "userId": "611fef856957575e44f76e69",
+      "score": 10
+    },
+    {
+      "userId": "611fefb46957575e44f76ed3",
+      "score": 10
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "6106e2b046d9f352fcb0ea4b"
+  },
+  "title": "Sekiro: Shadows Die Twice",
+  "description": "Explore late 1500s Sengoku Japan, a brutal period of constant life and death conflict, as you come face to face with larger than life foes in a dark and twisted world. Unleash an arsenal of deadly prosthetic tools and powerful ninja abilities while you blend stealth, vertical traversal, and visceral head to head combat in a bloody confrontation.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/en/6/6e/Sekiro_art.jpg",
+  "__v": 0,
+  "tags": [
+    "Hack and Slash",
+    "RPG"
+  ],
+  "scores": [
+    {
+      "userId": "611d613b856a733f54936afb",
+      "score": 1
+    },
+    {
+      "userId": "611fef306957575e44f76dbf",
+      "score": 8
+    },
+    {
+      "userId": "611fef596957575e44f76e17",
+      "score": 10
+    },
+    {
+      "userId": "611fef856957575e44f76e69",
+      "score": 10
+    },
+    {
+      "userId": "611fefb46957575e44f76ed3",
+      "score": 10
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "6106e3e23b32104e5822bd5d"
+  },
+  "title": "Red Dead Redemption 2",
+  "description": "America, 1899. Arthur Morgan and the Van der Linde gang are outlaws on the run. With federal agents and the best bounty hunters in the nation massing on their heels, the gang must rob, steal and fight their way across the rugged heartland of America in order to survive. As deepening internal divisions threaten to tear the gang apart, Arthur must make a choice between his own ideals and loyalty to the gang who raised him.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/en/4/44/Red_Dead_Redemption_II.jpg",
+  "__v": 0,
+  "tags": [
+    "Shooter",
+    "Open World",
+    "Story Rich"
+  ],
+  "scores": [
+    {
+      "userId": "611d613b856a733f54936afb",
+      "score": 6
+    },
+    {
+      "userId": "611fef016957575e44f76d6f",
+      "score": 5
+    },
+    {
+      "userId": "611fef306957575e44f76dbf",
+      "score": 7
+    },
+    {
+      "userId": "611fef596957575e44f76e17",
+      "score": 7
+    },
+    {
+      "userId": "611fef856957575e44f76e69",
+      "score": 10
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "6106e44a3b32104e5822bd62"
+  },
+  "title": "Hades ",
+  "description": "Hades is a god-like rogue-like dungeon crawler that combines the best aspects of Supergiant's critically acclaimed titles, including the fast-paced action of Bastion, the rich atmosphere and depth of Transistor, and the character-driven storytelling of Pyre.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/en/c/cc/Hades_cover_art.jpg",
+  "__v": 0,
+  "tags": [
+    "Hack and Slash",
+    "RPG",
+    "Roguelike"
+  ],
+  "scores": [
+    {
+      "userId": "611fef016957575e44f76d6f",
+      "score": 9
+    },
+    {
+      "userId": "611fef306957575e44f76dbf",
+      "score": 10
+    },
+    {
+      "userId": "611fef856957575e44f76e69",
+      "score": 10
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "611fec36721a957a89a7cf45"
+  },
+  "title": "Doom Eternal",
+  "description": "Hell’s armies have invaded Earth. Become the Slayer in an epic single-player campaign to conquer demons across dimensions and stop the final destruction of humanity.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/en/9/9d/Cover_Art_of_Doom_Eternal.png",
+  "__v": 0,
+  "tags": [
+    "FPS",
+    "Action"
+  ],
+  "scores": [
+    {
+      "userId": "611fef306957575e44f76dbf",
+      "score": 10
+    },
+    {
+      "userId": "611fef856957575e44f76e69",
+      "score": 8
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "611fecce721a957a89a7cf46"
+  },
+  "title": "Planescape: Torment",
+  "description": "What can change the nature of a man? You are the Nameless One, a hulking figure covered in scars and tattoos collected over the course of countless lives—none of which you can remember, but are now coming back to haunt you. You are prodded awake by Morte, a floating skull and keeper of secrets, to embark on an adventure taking The Nameless One from the dirty streets of Sigil into the mysterious Outer Planes and even into the depths of Hell itself.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/en/0/06/Planescape-torment-box.jpg",
+  "__v": 0,
+  "tags": [
+    "RPG",
+    "Strategy",
+    "Story Rich"
+  ],
+  "scores": [
+    {
+      "userId": "611fef856957575e44f76e69",
+      "score": 8
+    },
+    {
+      "userId": "611fefb46957575e44f76ed3",
+      "score": 10
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "611fed25721a957a89a7cf47"
+  },
+  "title": "OMORI",
+  "description": "Explore a strange world full of colorful friends and foes. Navigate through the vibrant and the mundane in order to uncover a forgotten past. When the time comes, the path you’ve chosen will determine your fate... and perhaps the fate of others as well.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/en/c/cd/Omori_cover.jpg",
+  "__v": 0,
+  "tags": [
+    "Horror",
+    "Strategy",
+    "Story Rich"
+  ],
+  "scores": [
+    {
+      "userId": "611fef596957575e44f76e17",
+      "score": 10
+    },
+    {
+      "userId": "611fef856957575e44f76e69",
+      "score": 7
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "611fedd1721a957a89a7cf48"
+  },
+  "title": "Metro Exodus",
+  "description": "Metro Exodus is an epic, story-driven first person shooter from 4A Games that blends deadly combat and stealth with exploration and survival horror in one of the most immersive game worlds ever created.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/en/a/af/Cover_Art_of_Metro_Exodus.png",
+  "__v": 0,
+  "tags": [
+    "Horror",
+    "FPS",
+    "Open World"
+  ],
+  "scores": [
+    {
+      "userId": "611fef016957575e44f76d6f",
+      "score": 4
+    },
+    {
+      "userId": "611fef306957575e44f76dbf",
+      "score": 10
+    },
+    {
+      "userId": "611fef856957575e44f76e69",
+      "score": 9
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "611fee3d721a957a89a7cf49"
+  },
+  "title": "Dying Light",
+  "description": "Survive in a city beset by a zombie virus! Discover the hard choice you will have to make on your secret mission. Will loyalty to your superiors prove stronger than the will to save the survivors? The choice is yours…",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/en/c/c0/Dying_Light_cover.jpg",
+  "__v": 0,
+  "tags": [
+    "Horror",
+    "FPS",
+    "Open World"
+  ],
+  "scores": [
+    {
+      "userId": "611fef306957575e44f76dbf",
+      "score": 7
+    },
+    {
+      "userId": "611fef596957575e44f76e17",
+      "score": 4
+    },
+    {
+      "userId": "611fef856957575e44f76e69",
+      "score": 9
+    },
+    {
+      "userId": "611fefb46957575e44f76ed3",
+      "score": 8
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "611feeb8721a957a89a7cf4a"
+  },
+  "title": "Overwatch",
+  "description": "Overwatch is a colorful team-based action game starring a diverse cast of powerful heroes. Travel the world, build a team, and contest objectives in exhilarating 6v6 combat.",
+  "imageUrl": "https://upload.wikimedia.org/wikipedia/en/5/51/Overwatch_cover_art.jpg",
+  "__v": 0,
+  "tags": [
+    "FPS",
+    "Multiplayer"
+  ],
+  "scores": [
+    {
+      "userId": "611fef016957575e44f76d6f",
+      "score": 9
+    },
+    {
+      "userId": "611fef596957575e44f76e17",
+      "score": 4
+    },
+    {
+      "userId": "611fef856957575e44f76e69",
+      "score": 3
+    },
+    {
+      "userId": "611fefb46957575e44f76ed3",
+      "score": 2
+    }
+  ]
+}]
