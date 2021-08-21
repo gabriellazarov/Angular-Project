@@ -15,11 +15,11 @@ export class ContentService {
   }
 
   loadFinishedGames(id: string) {
-    return this.http.get<any>(`${API_URL}/games/finished/${id}`);
+    return this.http.get<any>(`${API_URL}/games/finished/${id}`, { withCredentials: true });
   }
 
   loadPlanToPlay(id: string) {
-    return this.http.get<any>(`${API_URL}/games/planned/${id}`);
+    return this.http.get<any>(`${API_URL}/games/planned/${id}`, { withCredentials: true });
   }
 
   getAverageScore(game: IGame) {
@@ -29,7 +29,7 @@ export class ContentService {
       br += 1;
       total += score.score;
     }
-    if(br==0) return '?';
-    return parseFloat((total/br).toFixed(2));
+    if (br == 0) return 0;
+    return parseFloat((total / br).toFixed(2));
   }
 }

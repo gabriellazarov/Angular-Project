@@ -1,3 +1,5 @@
+import { AuthActivate } from './core/guards/auth.activate';
+import { ProfilePageComponent } from './user/profile-page/profile-page.component';
 import { RegisterPageComponent } from './user/register-page/register-page.component';
 import { LoginPageComponent } from './user/login-page/login-page.component';
 import { FinishedGamesComponent } from './games/finished-games/finished-games.component';
@@ -20,19 +22,48 @@ const routes: Routes = [
   },
   {
     path: 'plan-to-play',
-    component: PlanToPlayComponent
+    component: PlanToPlayComponent,
+    canActivate: [AuthActivate],
+    data: {
+      authenticationRequired: true,
+      authenticationFailureRedirectUrl: '/',
+    }
   },
   {
     path: 'finished-games',
-    component: FinishedGamesComponent
+    component: FinishedGamesComponent,
+    canActivate: [AuthActivate],
+    data: {
+      authenticationRequired: true,
+      authenticationFailureRedirectUrl: '/',
+    }
   },
   {
     path: 'login',
-    component: LoginPageComponent
+    component: LoginPageComponent,
+    canActivate: [AuthActivate],
+    data: {
+      authenticationRequired: false,
+      authenticationFailureRedirectUrl: '/',
+    }
   },
   {
     path: 'register',
-    component: RegisterPageComponent
+    component: RegisterPageComponent,
+    canActivate: [AuthActivate],
+    data: {
+      authenticationRequired: false,
+      authenticationFailureRedirectUrl: '/',
+    }
+  },
+  {
+    path: 'profile',
+    component: ProfilePageComponent,
+    canActivate: [AuthActivate],
+    data: {
+      authenticationRequired: true,
+      authenticationFailureRedirectUrl: '/login',
+    }
   },
   {
     path: '**',

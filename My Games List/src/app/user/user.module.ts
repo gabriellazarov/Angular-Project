@@ -4,13 +4,15 @@ import { LoginPageComponent } from './login-page/login-page.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { ProfilePageComponent } from './profile-page/profile-page.component';
 
 
 
 @NgModule({
   declarations: [
     LoginPageComponent,
-    RegisterPageComponent
+    RegisterPageComponent,
+    ProfilePageComponent
   ],
   imports: [
     CommonModule,

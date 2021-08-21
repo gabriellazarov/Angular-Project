@@ -1,0 +1,69 @@
+<div class="container">
+
+    <div class="profileContainer">
+        <form #form="ngForm" class="profile-info" action="" method="post" (ngSubmit)="updateProfile(form)"
+            autocomplete="off">
+
+            <fieldset>
+                <img class="profilePic" *ngIf="user!.profilePic" src={{user?.profilePic}}>
+                <img class="profilePic" *ngIf="!user!.profilePic" src="../../../assets/defaultAvatar.png">
+                
+                    <label for="profilePic"></label>
+                    <input class="input" type="url" name="profilePic" id="profilePic" [ngModel]="user!.profilePic" placeholder="imageURL">
+                
+
+                <p>Summary:</p>
+                
+                    <label for="profileSummary"></label>
+                    <textarea class="input" type="text" name="profileSummary" id="profileSummary" [ngModel]="user!.profileSummary" maxlength="100"> </textarea>
+                
+
+                <p>Age:</p>
+                
+                    <label for="age"></label>
+                    <input class="input" type="number" name="age" id="age" [ngModel]="user!.age" min="0">
+                
+                <br>
+                <button>Update</button>
+            </fieldset>
+
+        </form>
+    </div>
+
+    <div class="bigGameContainer">
+        <div class="listContainer" *ngIf="topFGames!.length>0">
+            <h2>Highest Rated games you have played:</h2>
+            <div *ngFor="let game of topFGames" class="game-container">
+                <div class="game-wrapper">
+
+                    <div class="columns">
+                        <p class="tags">{{game.title}}</p>
+                        <div>
+                            <p class="avgScoreTop"> Avg:</p>
+                            <p class="avgScoreBottom">{{getAverageScore(game)}}</p>
+                        </div>
+                    </div>
+
+                    <img class="gameImage" src={{game.imageUrl}} alt="going hollow...">
+                </div>
+            </div>
+        </div >
+        <div class="listContainer" *ngIf="topPtPGames!.length>0">
+            <h2 class="bigHeader">Highest Rated games you plan to play:</h2>
+            <div *ngFor="let game of topPtPGames" class="game-container">
+
+                <div class="game-wrapper">
+                    <div class="columns">
+                        <p class="tags">{{game.title}}</p>
+                        <div>
+                            <p class="avgScoreTop"> Avg:</p>
+                            <p class="avgScoreBottom">{{getAverageScore(game)}}</p>
+                        </div>
+                    </div>
+
+                    <img class="gameImage" src={{game.imageUrl}} alt="going hollow...">
+                </div>
+            </div>
+        </div >
+    </div>
+</div>

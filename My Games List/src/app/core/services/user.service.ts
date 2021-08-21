@@ -30,31 +30,36 @@ export class UserService {
   ///base functions
   register(data: { email: string; password: string }) {
     localStorage.clear();
-    return this.http.post<IUser>(`${API_URL}/user/register`, data).pipe(
+    return this.http.post<IUser>(`${API_URL}/user/register`, data, { withCredentials: true }).pipe(
       tap((user) => this.user = user)
     );
   }
 
   login(data: { email: string; password: string }) {
     localStorage.clear();
-    return this.http.post<any>(`${API_URL}/user/login`, data).pipe(
+    return this.http.post<any>(`${API_URL}/user/login`, data, { withCredentials: true }).pipe(
       tap((user) => this.user = user)
     );
   }
 
   logout() {
     localStorage.clear();
-    return this.http.post<IUser>(`${API_URL}/user/logout`, {}).pipe(
+    return this.http.post<IUser>(`${API_URL}/user/logout`, { withCredentials: true }).pipe(
       tap(() => this.user = null),
     );
   }
 
+  updateProfile(data: { profilePic: String, profileSummary: String, age: Number }) {
+    return this.http.put<IUser>(`${API_URL}/user/profile`, data, { withCredentials: true }).pipe(
+      tap((user) => this.user = user)
+    );
+  }
 
 
   ///other functions
-  finishGame( gameId: string) {
+  finishGame(gameId: string) {
     const userId = this.user?._id;
-    return this.http.put<any>(`${API_URL}/games/finish/${gameId}`, { userId }).pipe(
+    return this.http.put<any>(`${API_URL}/games/finish/${gameId}`, { userId }, { withCredentials: true }).pipe(
       tap(() => {
         const removeIndex = this.user?.planToPlay.indexOf(gameId);
         if (removeIndex !== -1) {
@@ -65,9 +70,9 @@ export class UserService {
     );
   }
 
-  planToPlay( gameId: string) {
+  planToPlay(gameId: string) {
     const userId = this.user?._id;
-    return this.http.put<any>(`${API_URL}/games/plan/${gameId}`, { userId }).pipe(
+    return this.http.put<any>(`${API_URL}/games/plan/${gameId}`, { userId }, { withCredentials: true }).pipe(
       tap(() => {
         const removeIndex = this.user?.finishedGames.indexOf(gameId);
         if (removeIndex !== -1) {
@@ -79,7 +84,7 @@ export class UserService {
   }
 
   scoreGame(gameId: string, score: any) {
-    return this.http.post<any>(`${API_URL}/games/score/${gameId}`, { userId: this.user?._id, score: score });
+    return this.http.post<any>(`${API_URL}/games/score/${gameId}`, { userId: this.user?._id, score: score }, { withCredentials: true });
   }
   getScore(game: IGame): any {
     const scores = game.scores;
@@ -94,7 +99,7 @@ export class UserService {
 
   removeFromList(gameId: string) {
     const userId = this.user?._id;
-    return this.http.post<any>(`${API_URL}/games/remove/${gameId}`, { userId }).pipe(
+    return this.http.post<any>(`${API_URL}/games/remove/${gameId}`, { userId }, { withCredentials: true }).pipe(
       tap(() => {
         const removeIndex = this.user?.finishedGames.indexOf(gameId);
         if (removeIndex !== -1) {
