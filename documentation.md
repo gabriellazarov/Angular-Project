@@ -17,6 +17,6 @@ Only accessible by logged in users. This page lists all games the user has finis
 Very similar to Finished Games as it is only accessible by logged in users and allows limited but adequate actions with the user's planned games.
 
 **Profile Page:**\
-Shows info about the user: a profile picture, short description, gender, age, all of which are edit-able and the user's highest rated  (by average score) finished and planned to play games.
+Shows info about the user: a profile picture, short description, age, all of which are edit-able and the user's highest rated  (by average score) finished and planned to play games.
 
 
