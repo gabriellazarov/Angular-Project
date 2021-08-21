@@ -20,13 +20,7 @@ const userSchema = new mongoose.Schema({
     password: {
         type: String,
         required: true,
-        minlength: [5, 'Password must be at least 5 characters long'],
-        validate: {
-            validator: function (v) {
-                return /[a-zA-Z0-9]+/g.test(v);
-            },
-            message: props => `${props.value} must contains only latin letters and digits!`
-        },
+        minlength: [5, 'Password must be at least 5 characters long']
     },
     planToPlay: [{
         type: ObjectId,
@@ -35,7 +29,18 @@ const userSchema = new mongoose.Schema({
     finishedGames: [{
         type: ObjectId,
         ref: "Game"
-    }]
+    }],
+
+    profilePic: {
+        type: String
+    },
+    profileSummary: {
+        type: String,
+        maxlength: [100, 'Summary must be no more than 100 symbols']
+    },
+    age: {
+        type: Number
+    }
 });
 
 

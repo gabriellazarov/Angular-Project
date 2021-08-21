@@ -90,11 +90,12 @@ function logout(req, res) {
         .catch(err => res.send(err));
 }
 
-function getProfileInfo(req, res, next) {
+function editProfileInfo(req, res, next) {
     const { _id: userId } = req.user;
-    console.log(req.user);
-    userModel.findOne({ _id: userId }, { password: 0, __v: 0 })
-        .then(user => { res.status(200).json(user) })
+    const { profilePic, profileSummary, age } = req.body;
+
+    userModel.findOneAndUpdate({ _id: userId }, { profilePic, profileSummary, age }, { runValidators: true, new: true })
+        .then(x => { res.status(200).json(x) })
         .catch(next);
 }
 
@@ -102,5 +103,5 @@ module.exports = {
     login,
     register,
     logout,
-    getProfileInfo
+    editProfileInfo
 }
